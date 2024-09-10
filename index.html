@@ -1,0 +1,38 @@
+<header>
+  <!-- Header Section with Reset Button and Game Title -->
+  <section class="top">
+    <!-- Reset Button to start the game over -->
+    <button class="again">Again !</button>
+    <!-- Instruction to guide the player about the range of numbers -->
+    <p class="white">(Between 1 and 20)</p>
+  </section>
+  <!-- Main Title of the Game -->
+  <h1 class="white name">Guess My Number !</h1>
+  <section class="bar">
+    <!-- Box that displays either "?" or the correct guessed number -->
+    <div class="contain-unknown white">
+      <p class="unknown-num">?</p>
+    </div>
+  </section>
+</header>
+
+<section class="main">
+  <section class="right">
+    <!-- Input field where the player enters their guess, allows numbers between 1 and 20 -->
+    <input type="number" class="guess" min="1" maxlength="2" value="" oninput="validity.valid||(value='')" />
+    <!-- Hidden element to store random number -->
+    <p class="Rnum" style="display: none"></p>
+    <!-- Button to check the player's guess -->
+    <button class="check">Check !</button>
+  </section>
+  <script src="default.js"></script>
+  <!-- Left side of the screen showing game status -->
+  <section class="left">
+    <!-- Reaction message based on the guess (too high, too low, correct) -->
+    <p class="reaction white">Start guessing...</p>
+    <!-- Score tracking element -->
+    <p class="score-dum white">💯 Score: <span class="score">20</span></p>
+    <!-- Highscore tracking element -->
+    <p class="high-score-dum white">🏆 Highscore: <span class="high-score">0</span></p>
+  </section>
+</section>
