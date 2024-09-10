@@ -5,6 +5,8 @@
 
 ## Features
 
+-**Live Demo**: https://codepen.io/harikantsharmag/pen/JjrWoaa?editors=0100
+
 - **Random Number Generation**: The game generates a random number between 1 and 20 at the start of each session.
   
 - **Input Validation**: Only numbers between 1 and 20 are accepted as valid guesses. Any out-of-range input triggers a validation message to ensure the game remains within its defined rules.
