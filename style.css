@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"); /* Importing custom font from Google Fonts */
+
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding */
+  font-family: "Press Start 2P", sans-serif; /* Applying the imported font */
+  font-size: 1rem; /* Setting a default font size */
+}
+
+body {
+  background-color: rgb(32, 31, 32); /* Dark background color for the entire body */
+}
+
+/* HEADER DESIGN */
+
+/* Applying white color to text */
+.white {
+  color: white;
+}
+
+.top {
+  width: 100%; /* The top section takes full width */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Align items at the far edges */
+}
+
+.again {
+  padding: 0.7em; /* Padding inside the button */
+  border: none; /* No border */
+  margin: 0.7em; /* Outer spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.again:hover {
+  background-color: rgb(207, 207, 207); /* Lighter background when hovered */
+}
+
+.again:active {
+  background-color: rgb(221, 220, 220); /* Even lighter background when clicked */
+}
+
+.name {
+  padding: 0.4em; /* Padding for the heading */
+  font-size: 2em; /* Larger font size */
+  text-align: center; /* Center-align text */
+}
+
+.bar {
+  width: 100%; /* Full width container */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center elements */
+  position: relative; /* Positioning for potential absolute child elements */
+}
+
+.contain-unknown {
+  width: 9em; /* Fixed width */
+  height: 7em; /* Fixed height */
+  background-color: #ebeaeb; /* Light background */
+  display: inline-flex; /* Inline flex container */
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+.contain-unknown::after {
+  content: ""; /* Empty content used for styling purposes */
+  position: absolute; /* Positioned relative to the parent */
+  width: 100%; /* Full width */
+  z-index: -1; /* Positioned behind the content */
+  height: 0.5em; /* Small height */
+  right: 0px; /* Positioned to the right */
+  background-color: white; /* White background for the after pseudo-element */
+}
+
+.unknown-num {
+  color: rgb(32, 31, 32); /* Dark text color */
+  font-size: 4em; /* Large font size */
+}
+
+/* MIDDLE GAME DESIGN */
+
+.main {
+  display: flex; /* Flexbox for layout */
+  padding: 2em; /* Padding around the main section */
+  margin-top: 7em; /* Top margin to separate from header */
+  justify-content: space-between; /* Space between main elements */
+}
+
+.right {
+  display: flex; /* Flexbox layout for the right section */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.guess::-webkit-inner-spin-button,
+.guess::-webkit-outer-spin-button {
+  appearance: none; /* Remove default number input spinner */
+}
+
+.guess {
+  width: 50%; /* Input field takes half width */
+  height: 2em; /* Fixed height */
+  color: white; /* White text color */
+  text-align: center; /* Center the input text */
+  padding: 1em; /* Padding inside the input field */
+  font-size: 2em; /* Larger font size */
+  outline: none; /* Remove the default outline */
+  border: 3px solid white; /* White border with a width of 3px */
+  background-color: rgb(32, 31, 32); /* Dark background for the input field */
+}
+
+.check {
+  text-align: center; /* Center the button text */
+  padding: 0.7em; /* Padding inside the button */
+  border: none; /* No border */
+  margin-top: 1em; /* Top margin to create space between input and button */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 10em; /* Fixed width for the button */
+}
+
+.check:hover {
+  background-color: rgb(207, 207, 207); /* Light background on hover */
+}
+
+.check:active {
+  background-color: rgb(221, 220, 220); /* Lighter background when clicked */
+}
+
+.score-dum {
+  margin-top: 5em; /* Top margin for spacing */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 920px) {
+  .left {
+    width: 30em; /* Left section width adjustment for screen sizes below 920px */
+  }
+}
+
+@media (max-width: 703px) {
+  .left {
+    width: 40em; /* Left section width adjustment for screen sizes below 703px */
+  }
+}
+
+@media (max-width: 630px) {
+  .left {
+    width: 50em; /* Left section width adjustment for screen sizes below 630px */
+  }
+}
